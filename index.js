@@ -9,10 +9,9 @@ const wsProvider = new WsProvider('wss://rpc.kulupu.corepaper.org/ws');
 
 process.on("unhandledRejection", (reason, p) => {
   console.log("Unhandled Rejection at: Promise", p, "reason:", reason);
-});
+}); 
 
 app.use(cors())
-
 
 var api;
 
